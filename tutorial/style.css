@@ -1,0 +1,120 @@
+/*O OBJETIVO DESSE ARQUIVO É ESCLARECER O USO
+ DAS PROPRIEDADES CSS E SEUS VALORES
+
+A SINTAXE DO CSS, OU SEJA: COMO SE ESCREVE
+O CÓDIGO. SEGUE ABAIXO O EXEMPLO.
+
+PROPRIEDADE: VALOR;
+//
+WIDTH: 50PX
+
+O CSS É RESPONSAVEL POR FAZER A ORGANIZAÇAO E ESTILIZAÇAO
+DO SEIU CONTEUDO HTML. E PARA ESSA CONEXAO ACONTECER É PRECISO
+VINCULAR O CSS COM O HTML. SENDO ASSIM, É NECESSARIO TER UM SELETOR.
+
+OS SELETORES PODEM SER:
+-TAGS (h1, p , div)
+-CLASS (. ANTES DO NOME // .exibicao, .posicao)
+-ID (# ANTES DO NOME // #painel)
+
+EXEMPLO DE USO DOS SELETORES:
+
+COM TAG
+div{
+    background-color: blue;
+}
+
+COM CLASS
+.exibicao{
+    background-color: blue;
+}
+
+COM ID
+#painel{
+    background-color: blue;
+}
+
+TANTO A CLASS QUANDO O ID, DEVEM SER ATRIBUÍDOS À ALGUMA TAG NO HTML
+PARA SURTIR ALGUM EFEITO NO VISUAL
+
+EXEMPLO DE USO DO CSS:
+
+#meuID{
+    margin: 0px;
+}
+
+NESTE EXEMPLO PEGAMOS O ELEMENTO COM O ID "meuID" E ALTERAMOS A PROPRIEDADE
+DE MARGIN (TODOS OS LADOS) DELE PARA 0;*/
+
+body{
+background-color: rgb(46,46,46);
+margin:0;
+padding:0;
+font-size: 1rem;
+font-family: Arial;
+
+/*DIFERENÇA DE PADDING E MARGIN
+https://sebhastian.com/css-margin-vs-padding/  */
+}
+
+/*ELEMENTO DIV DO HTML*/
+div{
+background-color:blueviolet;
+color: antiquewhite;
+width: 200px;
+height: 200px;
+border-bottom: 2px solid powderblue; /*ALGUMAS PROPRIEDADES PODEM SER COMBINADAS
+                                        COM OUTRAS.
+
+                                        BORDER É A PROPRIEDADE PARA MARCAR AS LINHAS DA EXTREMIDADE
+                                        DA TAG. QUANDO COMBINADA COM BOTTOM, MARCA SOMENTE A EXTREMIDADE 
+                                        DE BAIXO.*/
+
+box-shadow: 5px 5px 0px hotpink; /*box-shadow: distanciaX, distanciaY, intensidadeBlur, cor*/
+margin: 0 auto;
+}
+
+div > p{
+ /*NIVEL DE ESPECIFICAÇAO
+ A SINTAXE ACIMA ESPECIFICA QUE ESSAS PROPRIEDADES SERVEM APENAS PARA OS <P> QUE ESTÃO DENTRO DE UMA DIV.
+ <P>'s em qualquer outro lugar não serão afetados*/
+
+ line-height: 50px; /*A LINHA DE ESCRITA MESMO, O TAMANHO DELA*/
+ letter-spacing: 5px;
+ text-indent: 7px; /*DÁ O ESPACINHO DO PARAGRAFO*/
+ text-align: center;
+ text-transform: capitalize; /*Transforma a primeira letra de todas as palavras em maíuscula*/
+ text-decoration: underline; /*Decoraçoes para o texto, nesse caso: sublinhado*/
+}
+
+.exibicao{
+display: none; /*PARA DE RENDERIZAR AQUELE ELEMENTO*/
+}
+
+#posicao{
+    /*GUIA DAS POSITIONS
+
+    STATIC - É A PADRÃO, ESTÁTICO, NAO SEGUE COORDENADAS ESTABELECIDAS POR CODIGO(TOP, RIGHT, LEFT, BOTTOM; 
+    E PROPRIEDADES DO TRANSFORM)
+
+    ABSOLUTE - É MAIS LIVRE, RESPEITA DAS COORDENADAS DEFINIDAS POR VOCE NO CODIGO(TOP, RIGHT, LEFT, BOTTOM)
+    E PROPRIEDADES DO TRANSFORM, UTILIZANDO O BODY COMO REFERENCIA.
+
+    RELATIVE - IGUAL ABSOLUTE, MAS AO INVES DE SE REFERENCIAR AO BODY, TEM O PAI COMO REFERENCIA
+
+    FIXED - CRAVADO NA TELA, INDEPENDENTE DE SCROLLAR A PAGINA, TIPO CHAT DO FACEBOOK
+    
+    STICKY - COBRAR DE ALEX DEPOIS
+
+    
+    GUIA TOP, RIGHT, LEFT E BOTTOM
+    
+    ALINHA O LADO DO ELEMENTO COM O LADO DA PAGINA, EXEMPLO
+    TOP:0; -> ALINHA O LADO DE CIMA DO ELEMENTO COM O LADO DE CIMA DA PAGINA
+    RIGHT:0; -> ALINHA O LADO DIREITO DO ELEMENTO COM O LADO DIREITO DA PAGINA*/
+
+    position: absolute;
+    
+    right:0;
+    bottom:0;
+}
