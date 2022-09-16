@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+}
+
+.centro{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.tela{
+    width: 80%;
+    height: 80%;
+    background-color: cyan;
+    position: fixed;
+}
+
+div{
+ background-color: hotpink;
+ position:fixed;
+}
+
+.redondo{
+    border-radius:50%
+}
+
+#cabeca{
+    width: 350px;
+    height: 350px;
+    border-radius:50%;
+    background-color: transparent;
+    border: 10px solid hotpink;
+}
+ #boca {
+    width: 150px;
+    height: 100px;
+    border-top: 10px solid hotpink;
+    background-color: transparent;
+    border-radius: 50%;
+    top:75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+ }
+
+
+.diagonalOlho{   
+    width:100px;
+    height: 10px;
+    transform: rotateZ(45deg);
+    left:10%;
+    top:50%;
+    border-radius: 30%;
+
+}
+
+.inverter{
+    transform: rotateZ(-45deg);
+}
+
+.offsetOlho{
+    left:60%
+}
+
+
+.cruzH{
+    width: 50px;
+    height:10px;
+    border-radius: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:30%;
+}
+
+.cruzV{
+    width: 10px;
+    height:100px;
+    border-radius: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:10%;
+}
+
+.narinaE{
+
+    width: 10px;
+    height: 20px;
+   border-top: 5px solid hotpink;
+   border-left:5px solid hotpink;
+   border-bottom:5px solid hotpink;
+   background-color: transparent;
+   border-radius: 40%;
+   transform: rotateZ(-10deg);
+   top:60%;
+   left: 42%;
+
+}
+
+.narinaD{
+    width: 10px;
+    height: 20px;
+   border-top: 5px solid hotpink;
+   border-right:5px solid hotpink;
+   border-bottom:5px solid hotpink;
+   background-color: transparent;
+   border-radius: 40%;
+   transform: rotateZ(10deg);
+   top:60%;
+   left: 54%;
+}
+
+.chifreE{
+    border-top-left-radius: 100%;
+    border: 10px 
+    width: 150px;
+    height: 200px;
+    background-color: orangered;
+    left:10%;
+    top: -20%;
+    
+}
+
+}
+
