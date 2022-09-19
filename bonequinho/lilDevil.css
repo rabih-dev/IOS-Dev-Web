@@ -112,15 +112,77 @@ div{
 }
 
 .chifreE{
+
     border-top-left-radius: 100%;
-    border: 10px 
-    width: 150px;
-    height: 200px;
-    background-color: orangered;
-    left:10%;
+    border-left: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 75px;
+    height: 100px;
+    background-color: transparent;
+    left:8%;
     top: -20%;
-    
+    transform: rotate(-10deg);
 }
 
+.chifreE2{
+    border-top-left-radius: 100%;
+    border-left: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 50px;
+    height: 60px;
+    background-color: transparent;
+    left:20%;
+    top: -19%;
+    transform: rotateZ(-34deg);
 }
 
+
+.chifreE{
+
+    border-top-left-radius: 100%;
+    border-left: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 75px;
+    height: 100px;
+    background-color: transparent;
+    left:8%;
+    top: -20%;
+    transform: rotate(-10deg);
+}
+
+.chifreE2{
+    border-top-left-radius: 100%;
+    border-left: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 50px;
+    height: 60px;
+    background-color: transparent;
+    left:20%;
+    top: -19%;
+    transform: rotateZ(-34deg);
+}
+
+.chifreD{
+
+    border-top-right-radius: 100%;
+    border-right: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 75px;
+    height: 100px;
+    background-color: transparent;
+    left:66%;
+    top: -20%;
+    transform: rotate(10deg);
+}
+
+.chifreD2{
+    border-top-right-radius: 100%;
+    border-right: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 50px;
+    height: 60px;
+    background-color: transparent;
+    left:62%;
+    top: -19%;
+    transform: rotateZ(34deg);
+}
