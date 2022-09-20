@@ -1,0 +1,89 @@
+/*  #4C65F5 azul
+    #DE3A9A rosa
+    #3ADE89 verde
+    #FAED00 amarelo*/
+body{
+    background-color: #4C65F5;
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div.tela{
+    width: 1500px;
+    font-size: 25px;
+    background-color:#FAED00 ;
+    color:#DE3A9A ;
+}
+
+div.tela nav{
+    text-align: center;
+    padding:40px;
+}
+
+div.tela ul{
+    list-style: none;
+}
+
+div.tela nav ul li{
+    background-color: #3ADE89;
+    padding: 8px;
+    display: inline;
+    margin-right: 15px ;
+    border: 2px solid #DE3A9A;
+    box-shadow: 2px -2px 0px #DE3A9A;
+    cursor: pointer;
+    transition: .2s;
+}
+
+div.tela nav ul li:nth-child(1):hover{
+    text-decoration: underline;
+}
+
+div.tela nav ul li:hover {
+    text-shadow: 1px 1px  #DE3A9A;
+    padding:16px;
+    transition:0.2s;
+}
+
+p{
+    color:#FAED00;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*o first letter e first line nao se sobreescrevem*/
+p::first-letter{
+    color: #DE3A9A;
+}
+
+p::first-line{
+    color: #3ADE89;
+}
+
+p::after{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    content: "-1";
+    background-color: #DE3A9A;
+    border-radius: 50%;
+}
+
+p::before{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    content: "- 0";
+    background-color: #3ADE89;
+    
+}

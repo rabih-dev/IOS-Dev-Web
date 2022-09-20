@@ -1,3 +1,11 @@
 EDITOR DE CLIP PATH (https://bennettfeely.com/clippy/)
 
 clip path é a propriedade utilizada para gerar poligonos, com este editor você consegue fazer isso com mais facilidade.
+
+===============================================================================================================================
+
+ADOBE COLOR (https://color.adobe.com/pt/create)
+
+utilize para gerar paletas de cor.
+
+===============================================================================================================================
