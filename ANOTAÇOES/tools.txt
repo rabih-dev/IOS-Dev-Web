@@ -5,7 +5,22 @@ clip path é a propriedade utilizada para gerar poligonos, com este editor você
 ===============================================================================================================================
 
 ADOBE COLOR (https://color.adobe.com/pt/create)
+PALETA DE CORES (https://paletadecores.com/)
 
 utilize para gerar paletas de cor.
 
 ===============================================================================================================================
+
+FAVICON GENERATOR(https://www.favicon-generator.org/)
+
+converte a imagem pra o tamanho etc perfeitos pro favicon
+
+================================================================================================================================
+
+EDITOR CSS (https://html-css-js.com/)
+           (https://css3generator.com/)
+
+use para editar botoes, box shadows, text shadows....
+
+================================================================================================================================
+
