@@ -24,3 +24,9 @@ use para editar botoes, box shadows, text shadows....
 
 ================================================================================================================================
 
+CONVERSOR DE SVG(https://convertio.co/pt/png-svg/)
+
+svg é uma extensão de vetor (scalable vector graphics), use em logos, icones... 
+assim pode trabalhar com eles mais facil.
+
+================================================================================================================================
