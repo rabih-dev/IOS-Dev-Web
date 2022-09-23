@@ -1,0 +1,87 @@
+@font-face {
+    font-family: pokemonPixel;
+    src: url(font/pokemon_pixel_font.ttf)
+}
+
+@font-face {
+    font-family: pokemonPixelKatakana;
+    src: url(font/GlasstownNbpRegular-RyMM.ttf)
+}
+
+*{
+    color: hotpink;
+    margin: 0;
+    padding:0;
+    font-family:pokemonPixel, pokemonPixelKatakana,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    text-shadow: -1px 2px #00ffff;
+}
+
+body{
+    background: linear-gradient(to top, cyan, #ff69b4 );
+    width: 100%;
+    height: 100vh;
+    margin-top:40px;
+}
+main{
+    display: flex;
+    justify-content:flex-start;
+    background-color: yellow;
+    border: 4px solid white;
+    width: 90%;
+    height: 300px;
+    margin:auto;   
+}
+
+aside{
+    overflow: hidden;
+    margin-right: 64px;
+}
+
+main aside img{
+    border-right:4px solid white;
+    width: 100%;
+    height: 100%;   
+}
+
+main section{
+    padding: 32px;
+}
+
+.title{
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.navBar{
+    margin-top: 75px;
+}
+
+main section div.navBar ul{
+    list-style: none;
+}
+
+main section div.navBar nav ul li{
+    display: inline;
+    padding: 16px;
+    font-size: 20px;
+    border: 4px solid hotpink;
+    box-shadow: -1px 2px cyan ;
+    letter-spacing: 4px;
+    margin:8px;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+main section div.navBar nav ul li:hover{
+    padding: 20px;
+    letter-spacing: 6px;
+    text-shadow: -4px 8px cyan;
+    transition: .5s;
+}
+
+footer{
+    text-align: center;
+}

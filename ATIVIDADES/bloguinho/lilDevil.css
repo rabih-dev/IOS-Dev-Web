@@ -1,0 +1,185 @@
+
+.centro{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.tela{
+    width: 80%;
+    height: 80%;
+    background-color:transparent;
+    position: fixed;
+    bottom:100px;
+
+}
+
+div.tela div{
+ position:fixed;
+}   
+
+.redondo{
+    border-radius:50%
+}
+
+#cabeca{
+    width: 350px;
+    height: 350px;
+    border-radius:50%;
+    background-color: transparent;
+    border: 10px solid hotpink;
+}
+ #boca {
+    width: 150px;
+    height: 100px;
+    border-top: 10px solid hotpink;
+    background-color: transparent;
+    border-radius: 50%;
+    top:75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+ }
+
+
+.diagonalOlho{   
+    background-color: hotpink;
+    width:100px;
+    height: 10px;
+    transform: rotateZ(45deg);
+    left:10%;
+    top:50%;
+    border-radius: 30%;
+
+}
+
+.inverter{
+    transform: rotateZ(-45deg);
+}
+
+.offsetOlho{
+    left:60%
+}
+
+
+.cruzH{
+    width: 50px;
+    height:10px;
+    border-radius: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:30%;
+}
+
+.cruzV{
+    width: 10px;
+    height:100px;
+    border-radius: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:10%;
+}
+
+.narinaE{
+
+    width: 10px;
+    height: 20px;
+   border-top: 5px solid hotpink;
+   border-left:5px solid hotpink;
+   border-bottom:5px solid hotpink;
+   background-color: transparent;
+   border-radius: 40%;
+   transform: rotateZ(-10deg);
+   top:60%;
+   left: 42%;
+
+}
+
+.narinaD{
+    width: 10px;
+    height: 20px;
+   border-top: 5px solid hotpink;
+   border-right:5px solid hotpink;
+   border-bottom:5px solid hotpink;
+   background-color: transparent;
+   border-radius: 40%;
+   transform: rotateZ(10deg);
+   top:60%;
+   left: 54%;
+}
+
+.chifreE{
+
+    border-top-left-radius: 100%;
+    border-left: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 75px;
+    height: 100px;
+    background-color: transparent;
+    left:8%;
+    top: -20%;
+    transform: rotate(-10deg);
+}
+
+.chifreE2{
+    border-top-left-radius: 100%;
+    border-left: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 50px;
+    height: 60px;
+    background-color: transparent;
+    left:20%;
+    top: -19%;
+    transform: rotateZ(-34deg);
+}
+
+
+.chifreE{
+
+    border-top-left-radius: 100%;
+    border-left: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 75px;
+    height: 100px;
+    background-color: transparent;
+    left:8%;
+    top: -20%;
+    transform: rotate(-10deg);
+}
+
+.chifreE2{
+    border-top-left-radius: 100%;
+    border-left: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 50px;
+    height: 60px;
+    background-color: transparent;
+    left:20%;
+    top: -19%;
+    transform: rotateZ(-34deg);
+}
+
+.chifreD{
+
+    border-top-right-radius: 100%;
+    border-right: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 75px;
+    height: 100px;
+    background-color: transparent;
+    left:66%;
+    top: -20%;
+    transform: rotate(10deg);
+}
+
+.chifreD2{
+    border-top-right-radius: 100%;
+    border-right: 10px solid hotpink ;
+    border-top: 10px solid hotpink ;
+    width: 50px;
+    height: 60px;
+    background-color: transparent;
+    left:62%;
+    top: -19%;
+    transform: rotateZ(34deg);
+}
