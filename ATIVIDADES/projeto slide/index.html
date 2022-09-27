@@ -6,50 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Slide</title>
-
-    <!--ESTÁ AQUI APENAS PARA TESTAR O SLIDE, REMOVER DEPOIS-->
-   <!-- <style>
-        body{
-            display: flex; justify-content: center; align-items: center;
-            width: auto;
-            height: 100vh;
-
-            background: antiquewhite;
-            }
-
-            div.slider{
-                width: 800px;
-                height: 500px;
-                position: absolute;
-                overflow: hidden;
-            }
-
-            div.slides{
-                display: flex;
-                width: 300%;
-            }
-
-            div.slide img{
-                width: 100%;
-                height: 100%;
-            }
-
-            div.navigationBar{
-                position: absolute;
-                bottom:20px;
-                left:50%;
-                transform: translateX(-50%);
-                cursor: pointer;
-            }
-
-            input{
-                display: none;
-            }
-        
-
-    </style>
--->
 </head>
+
 <body>
     <header>
         <section>
@@ -70,49 +28,62 @@
         </section>
     </header>
 
-
-
-    <!--
-    slider = container para o passador
-    slide = conteudo do container
-    slide = imagens em si         
-    -->
-
-    <!--    <div class="slider">
-
-
-        <div class="slides">
-            -->
-            <!--O Radio funciona como uma prova de multipla escolha
-            o name é a pergunta, o id é a alternativa-->
-
-            <!--
-            <input type="radio" name="radioBtn" id="radio1">
-            <input type="radio" name="radioBtn" id="radio2">
-            <input type="radio" name="radioBtn" id="radio3">
+    <main>
+        <!-- slider = container para o passador
+        slide = conteudo do container
+        slide = imagens em si     -->    
+        <div class="slider">
+            <div class="slides">
         
-         
-            <div class="slide">
-                <img src="imagens/img1.jpg" alt="imagem do one piece 1">
-            </div>
+                <!--O Radio funciona como uma prova de multipla escolha
+                o name é a pergunta, o id é a alternativa-->
 
-            <div class="slide">
-                <img src="imagens/img2.jpg" alt="imagem do one piece 2">
+            
+                <input type="radio" name="radioBtn" id="radio1">
+                <input type="radio" name="radioBtn" id="radio2">
+                <input type="radio" name="radioBtn" id="radio3">
+            
+            
+                <div class="slide primeroSlide">
+                    <img src="imagens/souleater1.gif" alt="imagem do one piece 1">
+                </div>
 
-            </div>
+                <div class="slide">
+                    <img src="imagens/souleater2.gif" alt="imagem do one piece 2">
+                </div>
 
-            <div class="slide">
-                <img src="imagens/img3.jpg" alt="imagem do one piece 3">
+                <div class="slide">
+                    <img src="imagens/souleater3.gif" alt="imagem do one piece 3">
+                </div>
+
+            </div>                        <!--Fim da Div Slides-->
+
+            <div class="navigationBar">
+                <label class="fofinhoBtn" for="radio1"></label>
+                <label class="fofinhoBtn" for="radio2"></label>
+                <label class="fofinhoBtn" for="radio3"></label>
             </div>
         </div>
+    </main>
 
-        <div class="navigationBar">
-            <label for="radio1">BTN1</label>
-            <label for="radio2">BTN2</label>
-            <label for="radio3">BTN3</label>
+    <div class="content">
+        <div class="sinopse">
+            
+            <p>O anime/mangá conta a história de uma escola fictícia chamada Shibusen,
+            localizada no estado americano de Nevada, criada para eliminar os Ovos de Kishins, 
+            que são seres que usam a alma de humanos (em geral devorando-as) para se tornarem mais
+            poderosos; e as bruxas que vivem aterrorizando o mundo. Geralmente, bruxas são muito 
+            poderosas. Os encarregados de eliminar esses seres são os artesãos, que além de eliminar
+            os Kishins, devem ajudar suas armas a se tornarem armas de Shinigami (Diretor e criador
+            da Shibusen), para que ele a use como sua própria arma. Os artesãos devem fazer suas 
+            armas devorarem 99 ovos de Kishin e uma alma de bruxa, para se tornarem armas da morte 
+            ou armas de Shinigami.</p>
 
+            <div class="moon">
+                <img src="imagens/moon.png" alt="luazinha">
+            </div>
         </div>
     </div>
-    -->
+
 </body>
 </html>
