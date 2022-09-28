@@ -1,0 +1,83 @@
+body{
+    display: flex; justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+div.slider{
+    width: 800px;
+    height: 452px;
+    position: absolute;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 32px;
+}
+
+div.slides{
+    display: flex;
+    width: 300%;
+}
+
+div.slide{
+    width: 33.33%;
+    transition: .2s;
+    border-radius: 32px;
+
+}
+
+div.slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+}
+
+div.navigationBar{
+    position: absolute;
+    bottom: 30px;
+    left:50%; transform: translateX(-50%);
+    cursor: pointer;
+}
+
+input{
+    display: none;
+}
+
+.fofinhoBtn{
+    display:inline-block;
+    width: 20px; height: 20px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.fofinhoBtn:not(:last-child) /*not é a negaçao, como um if else 
+                  last-child trata-se do ultimo filho*/
+{
+    margin-right: 32px;
+}
+
+.fofinhoBtn:hover{
+    background: linear-gradient(to top, cyan, hotpink);
+    outline: 1px solid white; /*linha apos a borda*/
+    outline-offset: 2px; /*distancia do outline do elemento*/
+    transition: .2s;
+}
+
+.primeroSlide{
+    
+
+}
+
+#radio1:checked ~ .primeroSlide{
+    margin-left:0;
+}
+
+#radio2:checked ~ .primeroSlide{
+    margin-left: -33.33%;
+}
+
+#radio3:checked ~ .primeroSlide{
+    margin-left: -66.66%;
+}
