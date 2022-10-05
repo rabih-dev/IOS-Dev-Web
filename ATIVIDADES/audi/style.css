@@ -12,21 +12,22 @@ body{
 }
 
 header{
-    display: flex; justify-content: space-evenly; align-items: center;
+    background-color: #fbfcfa;
+    display: flex; justify-content: space-between; align-items: center;
     width: 100%; height:25%;
 }
 
 header section.logo{
-    width: 50%; height: 100%;
+    width: 45%; height: 100%;
 }
 
 header section.logo img{
     width:35%; height: auto; 
-    
+    margin: 10px 0px 0px 48px;
 }
 
 header section.navBar{
-  
+  margin-right: 48px;
 }
 
 header section.navBar ul{
@@ -34,11 +35,14 @@ header section.navBar ul{
 }
 
 header section.navBar ul li{
-    display: inline;
+    display: inline-block;
+    width: 94px;
+    text-align: center;
     font-size: 24px;
     padding: 16px;
-    /*border-top: 2px solid red;*/
     border-bottom:2px solid  red;
+    box-shadow: 0px 4px 0px transparent, 0px 8px 0px transparent, 0px 12px 0px transparent;
+    transition: .2s;
 }
 
 header section.navBar li:not(:last-child)
@@ -47,10 +51,10 @@ header section.navBar li:not(:last-child)
 }
 
 header section.navBar li:hover{
+    cursor: pointer;
+    transition: .2s;
     letter-spacing: 2px;
-    box-shadow: 0px 4px 0px rgba(255, 0, 0, 0.3), 0px 8px 0px rgba(255, 0, 0, 0.2), 0px 12px 0px rgba(255, 0, 0, 0.1);/*parte de baixo*/
-  /*  0px -4px 0px rgba(255, 0, 0, 0.3), 0px -8px 0px rgba(255, 0, 0, 0.2), 0px -12px 0px rgba(255, 0, 0, 0.1);/*parte de cima*/
-   
+    box-shadow: 0px 4px 0px rgba(255, 0, 0, 0.3), 0px 8px 0px rgba(255, 0, 0, 0.2), 0px 12px 0px rgba(255, 0, 0, 0.1);
 }
 
 main{
@@ -66,7 +70,7 @@ main p{
 }
 span{
     font-size: 32px;
-    color: red;
+    color: #ff0000;
 }
 
 main div.presentation{
@@ -81,29 +85,64 @@ width:50%; height: 100%;
 main div.bike img{
     margin-left: 500px;
     transform: rotateZ(-10deg) scale(.9);
-    transition: 2s;
+    transition: 2s
 }
 
 main div.bike img:hover
 {
+    
     margin-left: 0px;
     transform: rotateZ(-10deg) scale(.9);
     transition: 2s;
 }
 
 footer{
-    background-color: purple;
     width: 100%; height: 20%;
    
 }
 
 footer section.socialMedia{
     width: 100%; height: 100%;
-    display: flex; justify-content: space-around;
 }
-footer div{
+
+footer section{
     width:33%; height: 100%;
+    padding-top: 100px;
+    padding-left: 50px;
+
 }
+
+footer img{
+    display: inline;
+    width: auto; height: 35%;
+    margin:16px;
+    border-radius: 25px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+footer img:hover{
+    opacity: 1;
+    transition: .2s;
+    scale: 1.4;
+    /*cima e baixo*/
+    box-shadow:0px 4px 0px rgba(255, 0, 0, 0.3), 0px 8px 0px rgba(255, 0, 0, 0.2), 0px 12px 0px rgba(255, 0, 0, 0.1),
+    0px -4px 0px rgba(255, 0, 0, 0.3), 0px -8px 0px rgba(255, 0, 0, 0.2), 0px -12px 0px rgba(255, 0, 0, 0.1),
+    /*esquerda e direita*/
+    4px 0px 0px rgba(255, 0, 0, 0.3), 8px 0px 0px rgba(255, 0, 0, 0.2), 12px 0px 0px rgba(255, 0, 0, 0.1),
+    -4px 0px 0px rgba(255, 0, 0, 0.3), -8px 0px 0px rgba(255, 0, 0, 0.2), -12px 0px 0px rgba(255, 0, 0, 0.1);
+}
+
+.circle{
+    background-color: gray; opacity: .3;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    position:absolute; z-index: -1;
+    top:80%;
+    left: -6%;
+    box-shadow: 1000px -500px 0px grey;
+}
+
 
 
 

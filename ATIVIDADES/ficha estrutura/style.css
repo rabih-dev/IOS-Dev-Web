@@ -1,0 +1,56 @@
+body{
+    width: 100%; height: 200vh;
+}
+
+.content{
+    display: flex;
+}
+
+aside{
+    margin-left: 2%;
+    border: 2px solid black;
+    width: 35%; height: 200vh;
+}
+
+aside div{
+    width: 75%; height:25%;
+    background-color: magenta;
+    margin: 50px auto;
+}
+
+aside div:last-child{
+    margin-top: 150px;
+}
+
+main{
+    border: 2px solid black;
+    width: 55%; height: 200vh;
+    margin-left: 2%;
+}
+
+.content main section{
+    width: 100%; height: 15%;
+    background-color: aqua;
+}
+
+.content main section div{
+    width: 90%;height: 25%;
+    background-color: magenta;
+    margin: 50px auto;
+}
+
+.smallDiv{
+    width: 45%;
+}
+
+.content main section div.container{
+    width: 80%; height: 100%;
+    background-color: magenta;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content main section div.container div{
+    width: 25%; height: 80%;
+    background-color: yellow;
+}
