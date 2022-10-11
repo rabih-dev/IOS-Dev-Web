@@ -85,7 +85,7 @@ width:50%; height: 100%;
 main div.bike img{
     margin-left: 500px;
     transform: rotateZ(-10deg) scale(.9);
-    transition: 2s
+    transition: 1.2s
 }
 
 main div.bike img:hover
@@ -93,7 +93,7 @@ main div.bike img:hover
     
     margin-left: 0px;
     transform: rotateZ(-10deg) scale(.9);
-    transition: 2s;
+    transition: 1.2s;
 }
 
 footer{

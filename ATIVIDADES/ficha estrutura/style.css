@@ -33,13 +33,19 @@ main{
     background-color: aqua;
 }
 
-.content main section div{
+.rightDiv{
     width: 90%;height: 25%;
     background-color: magenta;
-    margin: 50px auto;
+    margin: 10px auto;
+}
+
+smallDivContainer{
+    width: 90%; height: 25%;
+    margin: 10px auto;
 }
 
 .smallDiv{
+    display: inline-block;
     width: 45%;
 }
 
