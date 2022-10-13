@@ -12,6 +12,7 @@ header.siteTitle{
     text-align: center;
 }
 body{
+    overflow-x: hidden;
     font-family: "typewriter";
     height: 100vh;
     background-image: url(imagens/bg3.gif);
@@ -25,8 +26,8 @@ body{
     box-sizing: border-box;
 }
 
-.persona:not(:first-child){
-    margin-top: 100px;
+.persona:not(:nth-child(3)){
+    margin-top: 200px;
 }
 
 .persona header{
@@ -59,6 +60,119 @@ body{
     margin-top: 64px;
     text-indent: 32px;
 }
+
+
+#bloodDrip{
+    position: absolute;
+    top: 141%;
+    left:2%;
+    z-index: -1;
+
+}
+
+#bloodDrip img {
+width: 800px;
+transform: scale(.8);
+opacity: .7;
+-webkit-box-reflect: right;
+}
+
+#stain1{
+    position: absolute;
+    top: 8%;
+    right:-10%;
+    z-index: -1;
+    transform: rotateZ(45deg);
+}
+
+
+#stain1 img {
+    opacity: .7;
+}
+
+#stain2{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    transform: rotateZ(-45deg);
+}
+
+
+#stain2 img {
+    opacity: .7;
+    transform: scale(2);
+}
+
+#stain3{
+    position: absolute;
+    top:50%;
+    left:-10%;
+    z-index: -1;
+    transform: rotateZ(-45deg);
+}
+
+
+#stain3 img {
+    opacity: .7;
+    transform: scale(.5);
+}
+
+#stain4{
+    position: absolute;
+    top:230%;
+    left:-20%;
+    z-index: -1;
+}
+
+
+#stain4 img {
+    opacity: .7;
+    transform: scale(1.7);
+}
+
+#stain5{
+    position: absolute;
+    top:250%;
+    right: -8%;
+    z-index: -1;
+    transform: rotateZ(45deg);
+}
+
+
+#stain5 img {
+    opacity: .7;
+    transform: scale(.5);
+}
+
+#stain6{
+    position: absolute;
+    top:350%;
+    left: -8%;
+    z-index: -1;
+    transform: rotateZ(45deg);
+}
+
+
+#stain6 img {
+    opacity: .7;
+}
+
+#stain7{
+    position: absolute;
+    top:150%;
+    right: -2%;
+    z-index: -1;
+}
+
+
+#stain7 img {
+    opacity: .7;
+    transform: scale(1.5);
+}
+
+
+
 
 
 
