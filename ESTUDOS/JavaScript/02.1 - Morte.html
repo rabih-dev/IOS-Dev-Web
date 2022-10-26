@@ -16,8 +16,23 @@
 </head>
 <body>
     <script>
-        
+        const setData = () =>{
+            let _name = prompt("Qual seu nome?")
+            let _age = prompt("Qual sua idade?");
+
+            if(_name != null && _age != null){
+            let _pName = document.querySelector("#name")
+            _pName.textContent = "Nome: " + _name;
+            let _pAge = document.querySelector("#age")
+            _pAge.textContent = "Idade: " + _age;
+            }
+        }
     </script>
+
+    <h1>Clique no butolinho</h1>
+    <button onclick="setData()">butolinho</button>
+    <p id ="name">Nome: </p>
+    <p id ="age">Idade: </p>
     
 </body>
 </html>
