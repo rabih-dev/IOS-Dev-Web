@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Média</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <script>
+         const setData = () =>{
+            let _name = prompt("Qual o nome do aluno?");
+            let _class = prompt("Qual a sala de " + _name + "?");
+            let _n1 = parseInt(prompt("Qual foi a primeira nota de " + _name + "?"));
+            let _n2 = parseInt(prompt("Qual foi a segunda nota de " + _name + "?"));
+            let _nf = (_n1 + _n2)/2;
+            
+            let _pStudents = document.querySelector("#students");
+            _pStudents.innerHTML += `Nome: ${_name} </br> Sala: ${_class} </br> N1: ${_n1} </br> N2: ${_n2} </br> Média: ${_nf}</br>`;
+            
+            if(_nf >= 7){
+                _pStudents.innerHTML += "<b>Situação: Aprovado<b> </br></br>"
+            }
+
+            else
+            {
+                _pStudents.innerHTML += "<b>Situação: Reprovado<b> </br></br>"
+            }
+        }
+    </script>
+    
+    <button onclick="setData()">Adicionar Aluno</button>
+    <p id="students"></p>
+</body>
+</html>
