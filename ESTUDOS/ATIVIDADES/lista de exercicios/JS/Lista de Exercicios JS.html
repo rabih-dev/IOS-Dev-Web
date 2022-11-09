@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const CheckAverage = () =>{
+            let grade = Number(prompt("Qual foi a nota do aluno em questão?"));
+            if(grade >= 7)
+            {
+                alert("O Aluno foi aprovado!");
+            }
+            else{
+                alert("O Aluno foi reprovado :(");
+            }
+        }
+
+            const Register = () =>{
+
+                let name = prompt("Qual o nome do candidato?");
+                let age =  Number(prompt("Qual a idade do candidato?"));
+                let enemGrade = Number(prompt("Qual a pontuação do candidato no ENEM?"));
+                let isBrazilian = confirm("O Candidato é brasileiro? (Confirmar para sim, Cancelar para não)");
+
+                if(age >= 17 && age <= 25 && enemGrade >= 250 && isBrazilian){
+                    alert(`Parabéns! ${name} está apto a se matricular!`)
+                }
+
+                else{
+                    alert(`Poxa, ${name} não está apto a se matricular. :(`)
+                }
+            }
+
+            const Month = () =>{
+                
+                let num = Number(prompt("Digite um número (1 à 12), que te digo o mês equivalente."))
+
+                switch (num){
+                    case 1:
+                        alert("Janeiro");
+                        break
+                    case 2:
+                        alert("Fervereiro");
+                        break
+                    case 3:
+                        alert("Março");
+                        break
+                    case 4:
+                        alert("Abril");
+                        break    
+                    case 5:
+                        alert("Maio");
+                        break
+                    case 6:
+                        alert("Junho");
+                        break
+                    case 7:
+                        alert("Julho");
+                        break
+                    case 8:
+                        alert("Agosto");
+                        break
+                    case 9:
+                        alert("Setembro");
+                        break
+                    case 10:
+                        alert("Outubro");
+                        break
+                    case 11:
+                        alert("Novembro");
+                        break
+                    case 12:
+                        alert("Dezembro");
+                        break
+                    default:
+                        alert("Este número não está na contagem de meses");
+                }
+            }
+
+            let PassagerCheck = () => {
+                let passagersCount = Number(prompt("Quantos passageiros irão nessa viagem?"))
+                let passagersAge = [];
+                let adultCount = 0;
+
+                for (let index = 0; index < passagersCount; index++) {
+                    passagersAge[index] = Number(prompt(`Qual a idade do ${index+1}° passageiro?`))
+
+                    if(passagersAge[index] >= 18)
+                    {
+                        adultCount++;
+                    }
+                }
+
+                if(adultCount > 0){
+                    alert("A viagem pode ser iniciada!");
+                }
+                else{
+                    alert("A viagem não pode ser iniciada.");
+                }
+            }
+    </script>
+
+    <button onclick="CheckAverage()">Checar Média</button>
+    <button onclick="Register()">Checar Matrícula</button>
+    <button onclick="Month()">Checar Mês</button>
+    <button onclick="PassagerCheck()">Checar Viagem</button>
+    
+</body>
+</html>
