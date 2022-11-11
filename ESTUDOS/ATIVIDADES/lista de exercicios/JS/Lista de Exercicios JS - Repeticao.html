@@ -8,6 +8,12 @@
 </head>
 <body>
     
+    <button onclick="underageCheck()">+18 Check</button>
+    <button onclick="biggerNumber()">Maior número</button>
+    <button onclick="even50Sum()">Soma de números pares 50-</button>
+    <button onclick="tables()">Tabuadas</button>
+    <button onclick="paymentCalc()">Salário</button>
+
     <script>
         const underageCheck = () =>{
             let peopleCount = Number(prompt("Quantas pessoas você gostaria de verificar?"))
@@ -31,34 +37,43 @@
 
         const biggerNumber = () =>{
             let numsInput =  prompt("Digite 5 numeros, separados por espaço")
-            let numsArray = numsInput.split(' ');
+            let numsArrayTemp = numsInput.split(' ');
+            let numsArrayFinal = numsArrayTemp.map(Number);
             let higherNumber = 0;
+            
+           console.log(numsArrayFinal);
 
-            for (let index = 0; index < numsArray.length; index++) {
+            for (let index = 0; index < numsArrayFinal.length; index++){
                 if(index == 0){
-                    higherNumber = numsArray[0];
+                    higherNumber = numsArrayFinal[index];
                 }
 
-                if(numsArray[index] > higherNumber)
+                if(numsArrayFinal[index] > higherNumber)
                 {
-                    higherNumber =  numsArray[index];
+                    higherNumber =  numsArrayFinal[index];
                 }
             }
-
             alert(`O maior numero digitado foi ${higherNumber}`);
         }
 
+        //ESTA ERRADO FAZER DNV ESTA PORRA
         const even50Sum = () =>{
             let sum = 0;
-            for (let index = 1; index <= 50; index++) {
-                
-                if(index % 2)
-                {
-                    sum += index;
+            let totalNumbers = 50;
+            let numbersCount = totalNumbers;
+            let numberToSum = 0;
+            while(numbersCount != 0)
+            {
+                numberToSum++ 
+
+                if(numberToSum % 2){
+                sum += numberToSum;
+                numbersCount--
                 }
+                
             }
 
-            alert(`A soma dos 50n primeiros numeros pares é ${sum}`);
+            alert(`A soma dos 50 primeiros numeros pares é ${sum}`);
         }
 
         const tables = () =>{
@@ -67,7 +82,7 @@
             let msg= " ";
             for (let index = 1; index <= 10; index++) {
 
-                msg += tableNumber + "x" + (tableNumber * index) + "/n";
+                msg += tableNumber + " x " + index + " = " + (tableNumber * index) + "\n";
                 
             }
 
@@ -75,7 +90,28 @@
         }
 
         const paymentCalc = () =>{
+
+            let startYear = Number(prompt("Digite o ano de admissão."));
+            let payment = Number(prompt("Digite o salario inicial."))
+            let increaseRate = Number(prompt("Digite o numero referente à porcentagem de aumento anual de seu salário."));
+            let finalYear = Number(prompt("Digite o ano cujo qual você deseja saber o salario."));
+
+            let howManyRuns= 0;
             
+
+            for (let index = startYear+1; index <= finalYear; index++) {
+                
+                payment += payment * increaseRate;
+
+                if(howManyRuns != 0)
+                {
+                    payment =  payment *2;
+                }
+
+                howManyRuns++;
+            }
+
+            alert(`O salário no ano final é: R$ ${payment}`);
         }
 
     </script>
