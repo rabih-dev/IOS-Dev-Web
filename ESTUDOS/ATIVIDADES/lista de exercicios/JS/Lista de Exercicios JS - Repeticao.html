@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const underageCheck = () =>{
+            let peopleCount = Number(prompt("Quantas pessoas você gostaria de verificar?"))
+            let peopleAge = [];
+            let underageCount= 0;
+            let overageCount=0;
+            for (let index = 0; index < peopleCount; index++) {
+                peopleAge[index] = Number(prompt(`Digite a idade da ${index + 1}° pessoa.`))
+                if(peopleAge[index] < 18)
+                {
+                    underageCount++;
+                }
+
+                else{
+                    overageCount++;
+                }
+            }
+
+            alert(`Dentre essas pessoas, ${underageCount} são menores e ${overageCount} são maiores.`);
+        }
+
+        const biggerNumber = () =>{
+            let numsInput =  prompt("Digite 5 numeros, separados por espaço")
+            let numsArray = numsInput.split(' ');
+            let higherNumber = 0;
+
+            for (let index = 0; index < numsArray.length; index++) {
+                if(index == 0){
+                    higherNumber = numsArray[0];
+                }
+
+                if(numsArray[index] > higherNumber)
+                {
+                    higherNumber =  numsArray[index];
+                }
+            }
+
+            alert(`O maior numero digitado foi ${higherNumber}`);
+        }
+
+        const even50Sum = () =>{
+            let sum = 0;
+            for (let index = 1; index <= 50; index++) {
+                
+                if(index % 2)
+                {
+                    sum += index;
+                }
+            }
+
+            alert(`A soma dos 50n primeiros numeros pares é ${sum}`);
+        }
+
+        const tables = () =>{
+
+            let tableNumber =  Number(prompt("Digite um numero que te direi a tabuada dele"));
+            let msg= " ";
+            for (let index = 1; index <= 10; index++) {
+
+                msg += tableNumber + "x" + (tableNumber * index) + "/n";
+                
+            }
+
+            alert(msg);
+        }
+
+        const paymentCalc = () =>{
+            
+        }
+
+    </script>
+
+      
+</body>
+</html>

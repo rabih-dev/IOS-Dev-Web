@@ -21,6 +21,7 @@ black.style.backgroundColor =  "black";
 let ln = document.createElement('br');
 
 let txt = document.getElementById('txtScreen');
+console.log(txt.textContent);
 
 for (let index = 0; index < txt.textContent.length; index++) {
     
