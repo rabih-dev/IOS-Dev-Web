@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Studio</title>
+</head>
+<body>
+    <header>
+        <h1>Studio</h1>
+    </header>
+
+    <section class="container">
+        <form id="my-form" action="https://google.com">
+
+            <h1>Adicionar agendamento</h1>
+
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name">
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email">
+            </div>
+
+            <div>
+                <select name="style" id="estilos">
+                    <option value="--">--</option>
+                    <option value="Old School">Old School</option>
+                    <option value="New School">New School</option>
+                    <option value="Oriental">Oriental</option>
+                    <option value="Trash">Trash</option>
+                    <option value="Watercolor">Watercolor</option>
+                    <option value="Blackwork">Blackwork</option>
+                    <option value="Cyber Signature">Cyber Signature</option>
+                </select>
+            </div>
+
+            <div>
+                <select name="hours" id="horario">
+                    <option value="--">--</option>
+                    <option value="9:00h">9:00h</option>
+                    <option value="10:00h">10:00h</option>
+                    <option value="11:00h">11:00h</option>
+                    <option value="12:00h">12:00h</option>
+                </select>
+            </div>
+
+            <input type="submit" class="btn" value="Enviar">
+        </form>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
