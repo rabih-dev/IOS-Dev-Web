@@ -1,0 +1,23 @@
+.programacao{
+    width: 90%;
+    margin: auto auto;
+    display: grid; grid-template-columns: 202.348px 202.348px 202.348px 202.348px 202.348px 202.348px; grid-template-rows: auto 180px 180px 180px 180px 180px;
+    text-align: center;
+    border: 1px solid #ddd141
+}
+
+.tab-header{
+    width: calc(90% - 32px); height: 80px;
+    display: flex; align-items: center; justify-content: space-between  ;
+    border: 1px solid #ddd141;
+    margin: 32px auto 0 auto;
+    padding: 16px;
+}
+.tab-header img {
+    width: auto; height: 100%;
+    margin-right: 12px;
+}
+
+.tab-item-cont{
+    border: 1px solid #ddd141;
+}
