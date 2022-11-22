@@ -78,8 +78,14 @@ ul li{
 }
 
 .error{
+    display: none;
+    width: 95%;
+    padding: 8px;
+    margin: 10px;
     font-size: 0.8rem;
-    background-color: #fff;
-    color:red ;
-    border-radius:1.2rem ;
+    color:red;
+    background-color: #333;
+    border: 1px solid #fff;
+    border-radius:5px;
+    text-align: center;
 }
