@@ -9,28 +9,38 @@ class News{
 
 //#region variables
 const newslist = document.querySelector('.newslist');
-
 let newsArray = [new News('Cineminha','imgs/cinema1.jpeg','slc mto massaboy mto msm'),
+                 new News('Cineminha2','imgs/cinema1.jpeg','MUAHAHAHAHAHAHHAHAHAHAHAHHAHAHAHAHHAHAHAHA'),
                  new News('Cineminha2','imgs/cinema1.jpeg','MUAHAHAHAHAHAHHAHAHAHAHAHHAHAHAHAHHAHAHAHA')]
 
 const zoomCanvas = document.querySelector('#zoomCanvas');
 const zoomedNews =  document.querySelector('.zoomedNews');
+
 //#endregion variables
 
 //zoomCanvas.style.display = 'none';
 newslist.addEventListener('click',(clickEvent) =>{
     if(clickEvent.target.classList.contains('pop-up')){
         zoomCanvas.style.display = 'flex';
+        const newsInNewlist =  newslist.getElementsByClassName('news');
+        // acessar os bang dentro e tal e botar la
     }
     else{
         console.log('beijinhos')
     }
 })
 
+zoomCanvas.addEventListener('keypress', (pressedKey) =>{
+    if(pressedKey.keyCode == 'escape'){
+    CloseZoomNews();
+    }
+    
+        console.log(pressedKey.keyCode);
+})
+
 
 
 newsArray.forEach(element => {
-
     let divNews = document.createElement('div');
     divNews.className ="news pop-up";
 
@@ -44,6 +54,10 @@ newsArray.forEach(element => {
 
     divNews.appendChild(divNewsImg);
     divNews.appendChild(divNewsOverview);
-
     newslist.appendChild(divNews);
 })
+
+
+function CloseZoomNews(){
+zoomCanvas.style.display = 'none';
+}
