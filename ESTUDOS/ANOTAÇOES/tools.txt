@@ -30,3 +30,12 @@ svg é uma extensão de vetor (scalable vector graphics), use em logos, icones..
 assim pode trabalhar com eles mais facil.
 
 ================================================================================================================================
+MOISES.AI (https://moises.ai/pt-BR/)
+
+separa os intrumentos da msc
+===========================================================================================================================
+invertexto (https://www.invertexto.com/)
+
+diversas coisas a ver com texto, desde reescrever com sinonimos à organizaçoes,
+trocar td pra maiusculo, minusculo...
+=============================================================================================================================

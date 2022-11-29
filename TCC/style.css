@@ -8,6 +8,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #121212;
+    background-image: url(imgs/bg/Cinema\ São\ Luiz/bgVasoPNG.png);
     color: #ddd141;
     font-family: 'bebas';
     text-transform: uppercase;
@@ -99,7 +100,7 @@ main{
 aside{
     width: 500px; height: calc(150vh + 64px);
     position: absolute;
-    display: flex;
+    display: none;
     align-items: center;
     z-index: -1;
 }
