@@ -9,7 +9,7 @@ class News{
 
 //#region variables
 const newslist = document.querySelector('.newslist');
-let newsArray = [new News('Cineminha','imgs/cinema1.jpeg','slc mto massaboy mto msm'),
+let newsArray = [new News('Cineminha','imgs/cinema2.jpeg','slc mto massaboy mto msm'),
                  new News('Cineminha2','imgs/cinema1.jpeg','MUAHAHAHAHAHAHHAHAHAHAHAHHAHAHAHAHHAHAHAHA'),
                  new News('Cineminha2','imgs/cinema1.jpeg','MUAHAHAHAHAHAHHAHAHAHAHAHHAHAHAHAHHAHAHAHA')]
 
@@ -22,8 +22,25 @@ const zoomedNews =  document.querySelector('.zoomedNews');
 newslist.addEventListener('click',(clickEvent) =>{
     if(clickEvent.target.classList.contains('pop-up')){
         zoomCanvas.style.display = 'flex';
-        const newsInNewlist =  newslist.getElementsByClassName('news');
+        let targetedNewsDiv;
+        //pegando a div news que foi clicada
+        for (let index = 0; index < clickEvent.path.length; index++) {
+           if(clickEvent.path[index].classList.contains('news')){
+                targetedNewsDiv = clickEvent.path[index];
+           }
+            
+           if(targetedNewsDiv != undefined){
+            console.log(targetedNewsDiv);
+            break;
+           }
+        }
+        
+        console.dir(targetedNewsDiv.querySelector('.news-img img'))
         // acessar os bang dentro e tal e botar la
+        zoomedNews.querySelector('.news-img img').src = targetedNewsDiv.querySelector('.news-img img').src;
+
+        zoomedNews.querySelector('.news-overview h2').innerHTML = targetedNewsDiv.querySelector('.news-overview h2').innerHTML
+        zoomedNews.querySelector('.news-overview p').innerHTML = targetedNewsDiv.querySelector('.news-overview p').innerHTML
     }
     else{
         console.log('beijinhos')
