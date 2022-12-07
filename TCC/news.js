@@ -18,7 +18,7 @@ const zoomedNews =  document.querySelector('.zoomedNews');
 
 //#endregion variables
 
-//zoomCanvas.style.display = 'none';
+zoomCanvas.style.display = 'none';
 newslist.addEventListener('click',(clickEvent) =>{
     if(clickEvent.target.classList.contains('pop-up')){
         zoomCanvas.style.display = 'flex';
