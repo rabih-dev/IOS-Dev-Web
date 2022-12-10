@@ -47,12 +47,12 @@ newslist.addEventListener('click',(clickEvent) =>{
     }
 })
 
-zoomCanvas.addEventListener('keypress', (pressedKey) =>{
-    if(pressedKey.keyCode == 'escape'){
+window.addEventListener("keydown", (pressedKey) =>{
+    if(pressedKey.key == 'Escape'){
     CloseZoomNews();
     }
     
-        console.log(pressedKey.keyCode);
+        console.dir(pressedKey)
 })
 
 
@@ -69,8 +69,13 @@ newsArray.forEach(element => {
     divNewsOverview.className = "news-overview pop-up";
     divNewsOverview.innerHTML = `<h2 class = "pop-up">${element.title}</h2> <p class = "pop-up">${element.overview}</p>`
 
+    let divSeeMore = document.createElement('div');
+    divSeeMore.className = 'ver-mais pop-up'
+    divSeeMore.innerHTML = `<p class ="pop-up">Ver mais<br/>(...)</p>`
+
     divNews.appendChild(divNewsImg);
     divNews.appendChild(divNewsOverview);
+    divNewsOverview.appendChild(divSeeMore)
     newslist.appendChild(divNews);
 })
 
