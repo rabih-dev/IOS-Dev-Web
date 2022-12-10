@@ -99,3 +99,7 @@
     text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
     line-height: 1.4;
     }
+
+    .card__synopsis{
+      display: none;
+    }

@@ -1,16 +1,28 @@
 //#region variables
-let imgsPathes = ['imgs/cinema1.jpeg','imgs/cinema2.jpeg','imgs/cinema3.jpeg'];
-const slideImg = document.querySelector('.slides img');
-let index = 0;
+const images = document.querySelectorAll('.slides img');
 //#endregion variables
+
 //#region functions
-function SlidePass(){
-   slideImg.src = imgsPathes[index];
-   index++;
-   if(index == (imgsPathes.length)){
-    index = 0;
+function slidePass(){
+   for (let index = 0; index < images.length; index++){
+      if(images[index].classList.contains('show-slide'))
+      {
+         images[index].classList.remove('show-slide')/*Escondendo o slide atual*/
+         console.log('tirei o showslide')
+         if(index == images.length-1) /*Verificando se é o ultimo slide*/
+         {
+            images[0].className = 'show-slide';/*Se for, volta pro primeiro*/ 
+            break;
+         }
+
+         else{
+            images[index+1].className = 'show-slide'; /*Se nao for, vai pro proximo*/
+            break;
+         }
+      }  
    }
 }
 //#endregion functions
 
-setInterval(SlidePass, 2000)
+setInterval(slidePass,5000);
+
