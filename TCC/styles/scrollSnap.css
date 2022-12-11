@@ -1,0 +1,23 @@
+html{
+    scroll-snap-type: y proximity;
+}
+ #snapBoxOne{
+    margin-top: 2rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#snapBoxTwo{
+   /*  margin-top: 15rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem; */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#snapBoxThree{
+    margin-top: 6.2rem;
+    padding-top: 20rem; 
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+} 
