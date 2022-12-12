@@ -45,12 +45,14 @@
 }
 
 .hour{
-    margin: auto auto;
+
+    margin-top:2rem;
     text-align: left;
     font-size: 32px;
 }
 
 .event{
+    font-weight: 600;
     text-align: left;
     margin-top: 1rem;
 }
@@ -66,7 +68,7 @@
 
 .zoomed-movie{
     width: 50%; height: 80%;
-    background-color: rgb(0, 0, 0);
+    background-color: #101010;
     display:flex;
 }
 
@@ -81,6 +83,7 @@
 .movie-info{
     width: 50%;
     padding: 2rem;
+    overflow-y: scroll;
 }
 
 .movie-category{
@@ -99,6 +102,7 @@
 }
 
 .close-btn{ 
+    position: fixed; top:4.5rem; right: 24rem;
     margin:1rem;
     width: 20px; height: 20px;
     font-size: 10px;

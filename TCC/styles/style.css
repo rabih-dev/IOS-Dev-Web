@@ -12,16 +12,16 @@
 }
 
 *{
+    font-family: 'raleway';
     margin: 0;
     padding: 0;
 }
 
 body{
-    font-weight: 900;
+    /* font-weight: 900; */
     background-color: #000;
     background-image: url(../imgs/bg/bg-vaso-dourado.png);
     color: #fff;
-    font-family: 'raleway';
     text-transform: uppercase;
     overflow-x: hidden;
 }
@@ -116,6 +116,7 @@ main{
     border-left: none; border-right: none; border-top: none;
    /*  border: 2px solid #333, 2px solid; border-left: none; border-right: none; */
     box-shadow: 0px -33px 16px rgba(100, 100, 100, 0.1) , 0px 33px 16px rgba(100, 100, 100, .1); /*bottom*/
+    text-indent: 32px;
 }
 
 .history{

@@ -130,64 +130,38 @@
                 <div class="movie-synopsis">
                   <p></p>
                 </div>
+
+                <button class="close-btn" onclick="closeZoomedMovie()">X</button>
             </div>
-            <button class="close-btn" onclick="closeZoomedMovie()">X</button>
+           
         </div>
         <img class="vase-garnish" src="../imgs/decoraçoes/vaso-dourado-decoracao.png">
       </div>
 
-      <footer>
-        <div class="main-content">
-          <div class="left box">
-            <div class="content1">
-              <div class="social">
-                <a href="#"><span class="fab fa-facebook-f"><img id="icone_face" src="/imgs/icons8-facebook-f.svg" alt="" height="30px" width="30px"></span></a>
-                <a href="#"><span class="fab fa-twitter"> <img src="/imgs/icon_twitter.svg" alt="" id="icone_twitter" height="30px" width="30px">          </span></a>
-                <a href="#"><span class="fab fa-instagram"><img src="/imgs/icon_insta.svg" alt="" id="icone_insta" height="30px" width="30px"></span></a>
-                <a href="#"><span class="fab fa-youtube"></span></a>
-              </div>
-            </div>
-          </div><!--left box-->
-          <div class="center box">
-            <h2>Endereço</h2>
-            <div class="content">
-              <div class="place">
-                <span class="fas fa-map-marker"></span>
-                <span class="text">Av.Brasil, Nova Capital</span>
-              </div>
-    
-              <div class="phone">
-                <span class="fas fas fa-phone-alt"></span>
-                <span class="text">+55 61 9999-9999</span>
-              </div>
-    
-              <div class="email">
-                <span class="fas fa-envelope"></span>
-                <span class="text">exemplo@exemplo.com</span>
-              </div>
-            </div>
+      <div class="footer">
+			
+        <div class="col-1">
+          <h3>CONTATOS</h3>
+          <p class="text-footer">Rua da Aurora, 175 <br> Boa Vista, Recife</p>
+          <p class="text-footer">(81) 3184-3157</p>
+          <div class="social-icons">
+            <a href = "https://www.facebook.com/cinesaoluiz/" class="fab fa-facebook"></a>
+					<a href = "https://www.instagram.com/cinesaoluizreal/" class="fab fa-instagram"></a>
+					<a href = "https://twitter.com/cinesaoluizreal?t=VypBsGijq2rneVK0uRYYpg&s=09" class="fab fa-twitter"></a>
           </div>
-          <div class="right box">
-            <h2>Contato</h2>
-            <div class="content">
-              <form action="#">
-                <div class="email">
-                  <div class="text">Email *</div>
-                  <input type="email" required>
-                </div>
-                <div class="msg">
-                  <div class="text">Mensagem *</div>
-                  <textarea rows="2" cols="25" required></textarea>
-                </div>
-                <div class="btn">
-                  <button type="submit">Enviar</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div><!--main-content-->
-      </footer>
+        </div>
+  
+        <div class="col-3">
+          <h3>NEWSLETTER</h3>
+          <form>
+            <input type="email" placeholder="E-MAIL" required>
+            <br>
+            <button type="submit">CADASTRAR</button>
+        </form>
+        
+      </div>
 
+      <script src="https://kit.fontawesome.com/e88866346b.js" crossorigin="anonymous"></script>
       <script src="../scripts/schedule.js"></script>
   </main> 
 

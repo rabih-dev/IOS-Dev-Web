@@ -34,7 +34,6 @@ let newsArray = [new News('Cine PE: Filmes, palestras e entrevistas','../imgs/..
 const zoomCanvas = document.querySelector('#zoom-canvas');
 const zoomedNews =  document.querySelector('.zoomed-news');
 
-//#endregion variables
 
 zoomCanvas.style.display = 'none';
 newslist.addEventListener('click',(clickEvent) =>{
@@ -51,7 +50,7 @@ newslist.addEventListener('click',(clickEvent) =>{
             console.log(targetedNewsDiv);
             break;
            }
-        }
+        }}
         
         console.dir(targetedNewsDiv.querySelector('.news-img img'))
         // acessar os bang dentro e tal e botar la
@@ -61,10 +60,7 @@ newslist.addEventListener('click',(clickEvent) =>{
         zoomedNews.querySelector('.zoomed-news-overview p').innerHTML = targetedNewsDiv.querySelector('.news-overview #full-overview').innerHTML;
         document.body.style.overflowY = 'hidden';
     }
-    else{
-        console.log('beijinhos')
-    }
-})
+)
 
 window.addEventListener("keydown", (pressedKey) =>{
     if(pressedKey.key == 'Escape'){

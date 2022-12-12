@@ -39,6 +39,8 @@ hr{
     transition: 200ms linear;
 }
 
+
+
 .news:hover > .news-overview p{
     color: #fff;
     transition: 200ms linear;
@@ -139,7 +141,7 @@ transition: .2s;
     line-height: 28px;
 }
 .close-btn{
-    position: fixed; top:5rem; right: 25rem;
+    position: fixed; top: 5.5rem; right: 25rem;
     width: 20px; height: 20px;
     font-size: 10px;
     text-align: center;
