@@ -3,7 +3,7 @@
     padding: 0;
 }
 .horarios-tab{
-    margin: 0rem auto 20rem auto;
+    margin: 0rem auto 10rem auto;
    
 }
 .programacao{
@@ -156,3 +156,26 @@ button.dropdown-option:hover{
 .reverse{
     transform: scaleX(-1);
 }
+
+.week-container.first-week{
+    margin-top: 10rem;
+}
+
+hr{
+    margin-top: 1rem;
+    border:1px solid #ddd141;
+   
+}
+
+.week-container-header{
+    padding-right: 10%;
+    padding-left: 12%;
+    margin-bottom: -3rem;
+}
+
+.week-container-header.first-week{
+    font-size: 20px;
+}
+
+
+

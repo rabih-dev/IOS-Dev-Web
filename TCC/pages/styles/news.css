@@ -134,6 +134,7 @@ transition: .2s;
     text-align: center;
     font-size: 24px;
     color: #fff;
+    text-indent: 32px;;
 }
 
 .zoomed-news-overview p {

@@ -16,7 +16,7 @@ html{
 }
 
 #snapBoxThree{
-    margin-top: 3.2rem;
+    margin-top: 2rem;
     padding-top: 12rem;
     scroll-snap-align: start;
     scroll-snap-stop: always;
