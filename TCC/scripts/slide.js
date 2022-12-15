@@ -24,5 +24,5 @@ function slidePass(){
 }
 //#endregion functions
 
-setInterval(slidePass,5000);
+/* setInterval(slidePass,5000); */
 
