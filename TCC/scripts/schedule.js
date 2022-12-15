@@ -43,7 +43,12 @@ let itemsArray =    [new Item('10:00','Bacurau'),
                     new Item('17:30','bacurau')]
 
 const cardGrid = document.querySelector('.card-grid')
-const zoomCanvas = document.getElementById('zoom-canvas')                   
+const zoomCanvas = document.getElementById('zoom-canvas')   
+const dropdownOptions = document.querySelectorAll('button.dropdown-option') 
+const dropdownPlaceholder = document.querySelector('#dropdown-placeholder')   
+const placeholderDropdownArrow = dropdownPlaceholder.querySelector('#dropdown-arrow')
+let manhaOption = false;
+let tardeOption = false;          
 //#endregion variables            
 
 
@@ -102,3 +107,46 @@ function closeZoomedMovie(){
     zoomCanvas.style.display = 'none';
     document.body.style.overflowY = 'auto'
     }
+
+
+function placeholderClick(){
+    let turnedOnCount=0;
+   
+    if(placeholderDropdownArrow.innerHTML == "▼"){
+        placeholderDropdownArrow.innerHTML = "&#9650;"
+    }
+
+    else{
+        placeholderDropdownArrow.innerHTML = "&#9660;"
+    }
+    
+    dropdownOptions.forEach(element => {
+        
+        if(element.style.display == 'flex')
+        {
+            turnedOnCount++;
+        }
+        element.style.display = 'flex'
+    });
+
+    if(turnedOnCount == dropdownOptions.length){
+      
+        turnOptionsOff();
+        turnedOnCount = 0;
+    }
+}
+
+function turnOptionsOff(){
+    dropdownOptions.forEach(element => {
+        element.style.display = 'none'
+    });
+}
+function selectManha(){
+    dropdownPlaceholder.innerHTML = dropdownOptions[0].innerHTML;
+    turnOptionsOff();
+}
+
+function selectTarde(){
+    dropdownPlaceholder.innerHTML = dropdownOptions[1].innerHTML;
+    turnOptionsOff();
+}

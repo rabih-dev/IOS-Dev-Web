@@ -1,28 +1,26 @@
 //#region variables
-const images = document.querySelectorAll('.slides img');
+const slides = document.querySelectorAll('.slide');
 //#endregion variables
 
 //#region functions
 function slidePass(){
-   for (let index = 0; index < images.length; index++){
-      if(images[index].classList.contains('show-slide'))
+   for (let index = 0; index < slides.length; index++){
+      if(slides[index].classList.contains('show-slide'))
       {
-         images[index].classList.remove('show-slide')/*Escondendo o slide atual*/
+         slides[index].classList.remove('show-slide')/*Escondendo o slide atual*/
          console.log('tirei o showslide')
-         if(index == images.length-1) /*Verificando se é o ultimo slide*/
+         if(index == slides.length-1) /*Verificando se é o ultimo slide*/
          {
-            images[0].className = 'show-slide';/*Se for, volta pro primeiro*/ 
+            slides[0].className = 'slide show-slide';/*Se for, volta pro primeiro*/ 
             break;
          }
 
          else{
-            images[index+1].className = 'show-slide'; /*Se nao for, vai pro proximo*/
+            slides[index+1].className = 'slide show-slide'; /*Se nao for, vai pro proximo*/
             break;
          }
       }  
    }
 }
 //#endregion functions
-
-/* setInterval(slidePass,5000); */
-
+setInterval(slidePass,5000);
