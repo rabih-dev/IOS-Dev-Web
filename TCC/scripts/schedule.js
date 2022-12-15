@@ -12,11 +12,11 @@ class Item{
 const programacao = document.querySelector('.programacao');
 
 let itemsArray =    [new Item('10:00','Bacurau'),
-                    new Item('12:00','Parasite'),
+                    new Item('10:00','Parasite'),
                     new Item('10:00','Cidade de Deus'),
                     new Item('10:30','Auto da Compadecida'),
                     new Item('11:00','Parasite'),
-                    new Item('12:00','Titanic'),
+                    new Item('11:00','Titanic'),
                     new Item('15:00','Parasite'),
                     new Item('16:00','Cidade de Deus'),
                     new Item('15:30','Titanic'),
@@ -46,15 +46,21 @@ const cardGrid = document.querySelector('.card-grid')
 const zoomCanvas = document.getElementById('zoom-canvas')   
 const dropdownOptions = document.querySelectorAll('button.dropdown-option') 
 const dropdownPlaceholder = document.querySelector('#dropdown-placeholder')   
-const placeholderDropdownArrow = dropdownPlaceholder.querySelector('#dropdown-arrow')
-let manhaOption = false;
-let tardeOption = false;          
+const placeholderDropdownArrow = dropdownPlaceholder.querySelector('#dropdown-arrow')     
 //#endregion variables            
 
 
-itemsArray.forEach(element => {
+itemsArray.forEach(element => { 
+    
+    if(Number(element.hour.substring(0,2)) < 12){
+        dayshift = 'manha'
+    }
+
+    else{
+        dayshift = 'tarde'
+    }
     let tabItem = document.createElement('div');
-    tabItem.className ="tab-item-cont";
+    tabItem.className =`tab-item-cont ${dayshift}`;
 
     let hourDiv = document.createElement('div');
     hourDiv.className = "hour";
@@ -142,11 +148,33 @@ function turnOptionsOff(){
     });
 }
 function selectManha(){
+    console.log('rodei')
     dropdownPlaceholder.innerHTML = dropdownOptions[0].innerHTML;
     turnOptionsOff();
+    const tabItems = programacao.querySelectorAll('.tab-item-cont')
+    tabItems.forEach(element => {
+        if(!element.classList.contains('manha') & !element.classList.contains('week-day')){
+            element.style.display = 'none'
+        }
+
+        else if(element.classList.contains('manha') & !element.classList.contains('week-day')){
+            element.style.display = 'block'
+        }
+    });
+    
 }
 
 function selectTarde(){
     dropdownPlaceholder.innerHTML = dropdownOptions[1].innerHTML;
     turnOptionsOff();
+    const tabItems = programacao.querySelectorAll('.tab-item-cont')
+    tabItems.forEach(element => {
+        if(!element.classList.contains('tarde') & !element.classList.contains('week-day')){
+            element.style.display = 'none'
+        }
+
+        else if(element.classList.contains('tarde') & !element.classList.contains('week-day')){
+            element.style.display = 'block'
+        }
+    });
 }
